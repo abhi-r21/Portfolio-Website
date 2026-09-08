@@ -1,0 +1,40 @@
+:root {
+  --background: #0a0a0a;
+  --text: #ffffff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero video {
+  width: 100%;
+  height: 50vh;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.hero-video video{
+  width: 85%;
+  height: 65vh;
+  object-fit: cover;
+  display: block;
+}
+.profile-pic {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  left: 225px;
+  bottom: 160px;
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
