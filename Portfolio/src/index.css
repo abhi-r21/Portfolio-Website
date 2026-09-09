@@ -22,17 +22,17 @@ body {
 }
 
 .hero-video video{
-  width: 85%;
-  height: 50vh;
+  width: 80%;
+  height: 40vh;
   object-fit: cover;
   display: block;
 }
 .profile-pic {
   position: relative;
-  width: 230px;
-  height: 230px;
+  width: 200px;
+  height: 200px;
   left: 225px;
-  bottom: 120px;
+  bottom: 100px;
   object-fit: cover;
   border: 1px solid black;
   border-radius: 50%;
