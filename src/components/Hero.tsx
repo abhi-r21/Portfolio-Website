@@ -28,7 +28,7 @@ function Hero() {
       </div>
       <div className="hero-content">
         <p>
-          Hilo! I'm a <span className="text-blue-400"> Full-stack developer</span>{" "} crafting clean, functional, and thoughtful digital experiences. Currently turning ideas into products and learning something new along the way.
+          Hilo! I'm <span className="font-bold tracking-[2.5px]">ABHIRAM</span>{" "} aka Abhi, a <span className="text-blue-400"> Full-stack developer</span>{" "} crafting clean, functional, and thoughtful digital experiences. Currently turning ideas into products and learning something new along the way.
           <div className="mt-6 flex items-center justify-center gap-2" >
             <span className="text-cyan-400">Code,</span>{" "} 
             create, 
