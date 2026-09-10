@@ -16,13 +16,13 @@ function Hero() {
           
           <div className="social-icons">
             <a href="http://github.com/abhi-r21" target="_blank">
-            <FaGithub />
+            <FaGithub size={22}/>
             </a>
             <a href="https://x.com/Ab_hiii21" target="_blank">
-            <SiX/>
+            <SiX size={17}/>
             </a>
             <a href="https://www.linkedin.com/in/abhiram-bojja/" target="_blank">
-            <FaLinkedin/>
+            <FaLinkedin size={25}/>
             </a>
           </div>
       </div>
