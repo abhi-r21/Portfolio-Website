@@ -37,10 +37,10 @@ function MusicPlayer() {
         src="/music/Metro Boomin, A AP Rocky, Roisee - Am I Dreaming (Visualizer).mp3"
         loop
         />
-        
-        <button onClick={toggleMusic} className="fixed right-6 top-6 z-50 rounded-full p-3 text-white">
-          {isPlaying ? <div className="flex h-6 w-6 items-center justify-center rounded-full border border-white/20"><RiMusic2Line size={14}/></div> : <div className="flex h-6 w-6 items-center justify-center rounded-full border border-white/20"><RiMusic2Line size={14}/></div>}
-        </button>
+  
+          <div onClick={toggleMusic} className="flex h-6 w-6 items-center justify-center rounded-full border border-white/20 translate-y-[1px]">
+            <RiMusic2Line size={14} />
+          </div>
     </>
   );
 }
