@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa"; 
 import { SiX } from "react-icons/si";
+import { LuRepeat } from "react-icons/lu";
 
 function Hero() {
   return (
@@ -24,6 +25,17 @@ function Hero() {
             <FaLinkedin/>
             </a>
           </div>
+      </div>
+      <div className="hero-content">
+        <p>
+          Hilo! I'm a <span className="text-blue-400"> Full-stack developer</span>{" "} crafting clean, functional, and thoughtful digital experiences. Currently turning ideas into products and learning something new along the way.
+          <div className="mt-6 flex items-center justify-center gap-2" >
+            <span className="text-cyan-400">Code,</span>{" "} 
+            create, 
+            <span className="text-lime-400"> experiment, </span>{" "} 
+            repeat.<LuRepeat className="text-red-400" />
+          </div>
+        </p>
       </div>
     </section>
   );

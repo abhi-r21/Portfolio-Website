@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
+
 :root {
   --background: #0a0a0a;
   --text: #ffffff;
@@ -8,7 +10,6 @@ body {
   margin: 0;
   background-color: var(--background);
   color: var(--text);
-  font-family:"Cormorant Garamond", serif;
 }
 
 .hero {
@@ -46,6 +47,7 @@ body {
 
 /* Name + social icons */
 .portfolio-info {
+  font-family:"Cormorant Garamond", serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,5 +84,17 @@ body {
 
 .social-icons a:hover {
   opacity: 0.6;
+}
+
+/* Hero Content */
+.hero-content {
+  font-family: "Baricolage Grotesque", sans-serif;
+  font-size: 1.28rem;
+  line-height: 1.6;
+  word-spacing: 2px;
+
+  margin-top: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
