@@ -9,7 +9,7 @@ function Hero() {
       <video src="/videos/Video Project 5.mp4" autoPlay loop muted playsInline></video>
       </div>
 
-      <img src="/toji.jpeg" alt="Profile" className="profile-pic"/>
+      <img src="/images/toji.jpeg" alt="Profile" className="profile-pic"/>
 
       <div className="portfolio-info">
           <h1 className="name">Abhiram Bojja</h1>
