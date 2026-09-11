@@ -7,10 +7,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <main>
-        <Hero/>
-        <Projects/>
-      </main>
+
+      <Hero/>
+      <Projects/>
   </>
   );
 }
