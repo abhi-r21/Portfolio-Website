@@ -1,6 +1,7 @@
 import{ motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import AboutText from "./AboutText"; 
+import AboutText from "./AboutText";
+import WhatIDo from "./WhatIDo"; 
 
 function AboutMe() {
   const ref = useRef<HTMLDivElement>(null);
@@ -31,6 +32,7 @@ function AboutMe() {
     </div>
 
       <AboutText scrollYProgress={scrollYProgress} />
+      <WhatIDo />
     </section>
   );
 }
