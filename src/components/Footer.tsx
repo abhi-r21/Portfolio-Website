@@ -1,8 +1,20 @@
+import SocialLinks from "./SocialLinks";
 function Footer() {
   return(
-    <section className="footer">
+    <footer className="border-t border-white-800 px-6 py-10">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-5">
+        <SocialLinks />
 
-    </section>
+        <p className="text-sm text-gray-400">
+          Built with React & TypeScript
+        </p>
+
+        <p className="text-sm text-gray-500">
+          © 2026 Abhiram Bojja. All rights reserved.
+        </p>
+
+      </div>
+    </footer>
   );
 }
 
