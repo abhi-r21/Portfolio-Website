@@ -3,6 +3,7 @@ import { useRef } from "react";
 import AboutText from "./AboutText";
 import WhatIDo from "./WhatIDo"; 
 import CurrentlyLearning from "./CurrentlyLearning";
+import TechStack from "./TechStack";
 
 function AboutMe() {
   const ref = useRef<HTMLDivElement>(null);
@@ -43,6 +44,7 @@ function AboutMe() {
         <WhatIDo />
       </div>
       <CurrentlyLearning />
+      <div className="pt-32"><TechStack /></div>
     </section>
   );
 }
