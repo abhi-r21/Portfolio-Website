@@ -14,7 +14,7 @@ function TechStack() {
   ];
 
   return (
-    <section className="overflow-hidden px-6 py-20">
+    <section className="overflow-hidden px-6">
       <h2 className="text-center font-[Cormorant_Garamond] text-5xl font-bold">
         Tech Stack
       </h2>

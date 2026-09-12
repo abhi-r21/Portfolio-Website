@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 function WhatIDo() {
   return (
-    <section className="min-h-screen px-6 py-20">
+    <section className="px-6">
       <h2 className="text-center font-[DM_Sans] text-4xl font-bold">
         What I Do
       </h2>
