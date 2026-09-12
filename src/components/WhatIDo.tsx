@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 function WhatIDo() {
   return (
     <section className="min-h-screen px-6 py-20">
@@ -8,7 +10,13 @@ function WhatIDo() {
       <div className="mx-auto mt-16 grid max-w-5xl gap-8 md:grid-cols-3">
 
         {/* Frontend Development */}
-        <div className="rounded-2xl border border-gray-700 p-8">
+        <motion.div 
+        className="rounded-2xl border border-gray-700 p-8"
+        initial = {{ opacity: 0, y: 80}}
+        whileInView={{opacity: 1, y: 0}}
+        viewport={{ once:true, amount: 0.5 }}
+        transition={{ duration: 0.8, delay: 0 }}
+        >
           <h3 className="text-2xl font-semibold">
             Frontend Development
           </h3>
@@ -16,10 +24,16 @@ function WhatIDo() {
           <p className="mt-4 text-gray-400">
             Building responsive and interactive interface
           </p>
-        </div>
+        </motion.div>
 
         {/* Full-stack Development */}
-        <div className="rounded-2xl border border-gray-700 p-8">
+        <motion.div 
+        className="rounded-2xl border border-gray-700 p-8"
+        initial = {{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0}}
+        viewport={{ once:true, amount: 0.5}}
+        transition={{ duration: 0.8, delay: 0.2}}
+        >
           <h3 className="text-2xl font-semibold">
             Full-stack Development
           </h3>
@@ -27,10 +41,15 @@ function WhatIDo() {
           <p className="mt-4 text-gray-400">
             Connecting thoughtful interfaces with functional backend systems.
           </p>
-        </div>
+        </motion.div>
 
         {/* Problem Solving */}
-        <div className="rounded-2xl border border-gray-700 p-8">
+        <motion.div 
+        initial={{ opacity: 0, y: 80}}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="rounded-2xl border border-gray-700 p-8">
           <h3 className="text-2xl font-semibold">
             Problem Solving
           </h3>
@@ -38,7 +57,7 @@ function WhatIDo() {
           <p className="mt-4 text-gray-400">
             Breaking down ideas and turning them into working products.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
