@@ -1,35 +1,35 @@
-import { motion, useScroll, useTransform } from "motion/react";
-import { useRef } from "react";
+import { motion, useTransform } from "motion/react";
+import type { MotionValue } from "motion/react";
 
-function AboutText() {
-  const ref =useRef<HTMLDivElement>(null);
+interface AboutTextProps {
+  scrollYProgress: MotionValue<number>;
+}
 
-  const{ scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start center", "end center"]
-  });
-  
+function AboutText({scrollYProgress}: AboutTextProps) {
+
+  //Text appears
   const opacity = useTransform(
-    scrollYProgress, [0, 0.4, 0.8, 1], [0, 1, 1, 0]
-  )
-
+    scrollYProgress, [0.2, 0.35, 0.5, 0.65], [ 0, 1, 1, 0]
+  );
+  
+  //Blur only while disappearing
   const blur = useTransform(
-    scrollYProgress, [0, 0.6, 1], [0, 0, 8]
+    scrollYProgress, [0.5, 0.65], [0, 10]
   );
 
   const filter = useTransform(
-    blur, 
-    (value) => `blur(${value}px)`
+    blur, (value) => `blur(${value}px)`
   );
 
+
   return (
-    <div 
-    ref={ref} 
-    className="flex min-h-screen items-center justify-center px-6"
-    >
-      <motion.p
-      style = {{ opacity, filter }}
-      className="max-w-5xl text-center text-2xl leading-relaxed text-gray-400"
+    <div className="sticky top-0 flex h-screen items-center justify-center px-6">
+      <motion.p 
+      style = {{
+         opacity,
+         filter
+        }}
+      className="max-w-5xl text-center text-2xl leading-relaxed text-white-400"
       >
         I'm a developer who enjoys turning ideas into clean, functional
         digital experiences. I like experimenting with new technologies,
@@ -39,5 +39,7 @@ function AboutText() {
     </div>
   )
 }
+  
+
 
 export default AboutText;

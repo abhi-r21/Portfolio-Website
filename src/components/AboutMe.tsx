@@ -10,7 +10,7 @@ function AboutMe() {
   });
   
   //Move About Me from lower position to the top
-  const y = useTransform(scrollYProgress, [0, 0.5], [500, 0]);
+  const y = useTransform(scrollYProgress, [0, 0.5], [100, 0]);
 
   //Slightly reduce its size while moving
   const scale = useTransform(scrollYProgress, [0, 0.35], [1.1, 1]);
@@ -19,7 +19,7 @@ function AboutMe() {
     <section 
     id="aboutme"
     ref={ref}
-    className="relative h-[200vh]"
+    className="relative h-[300vh]"
     >
       {/* This is the position where the heading will stay */}
     <div className="sticky top-8 z-20">
@@ -30,7 +30,7 @@ function AboutMe() {
       </motion.h1>
     </div>
 
-      <AboutText />
+      <AboutText scrollYProgress={scrollYProgress} />
     </section>
   );
 }
