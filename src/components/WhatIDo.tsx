@@ -15,7 +15,7 @@ function WhatIDo() {
         initial = {{ opacity: 0, y: 80}}
         whileInView={{opacity: 1, y: 0}}
         viewport={{ once:true, amount: 0.5 }}
-        transition={{ duration: 0.8, delay: 0 }}
+        transition={{ duration: 1.2, delay: 0 }}
         >
           <h3 className="text-2xl font-semibold">
             Frontend Development
@@ -32,7 +32,7 @@ function WhatIDo() {
         initial = {{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0}}
         viewport={{ once:true, amount: 0.5}}
-        transition={{ duration: 0.8, delay: 0.2}}
+        transition={{ duration: 1.2, delay: 0.2}}
         >
           <h3 className="text-2xl font-semibold">
             Full-stack Development
@@ -48,7 +48,7 @@ function WhatIDo() {
         initial={{ opacity: 0, y: 80}}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
+        transition={{ duration: 1.2, delay: 0.4 }}
         className="rounded-2xl border border-gray-700 p-8">
           <h3 className="text-2xl font-semibold">
             Problem Solving

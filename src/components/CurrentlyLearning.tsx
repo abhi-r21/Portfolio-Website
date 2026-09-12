@@ -28,7 +28,7 @@ function CurrentlyLearning() {
 
   return (
     <section className="overflow-hidden py-20">
-      <h2 className="mb-16 text-center font-[Cormorant_Garamond] text-4xl font-bold">Currently Exploring</h2>
+      <h2 className="mb-16 text-center font-[Cormorant_Garamond] text-5xl font-bold">Currently Exploring</h2>
         <div className="overflow-hidden">
           <motion.div 
           style={{ x }}

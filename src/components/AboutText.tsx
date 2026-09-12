@@ -9,12 +9,12 @@ function AboutText({scrollYProgress}: AboutTextProps) {
 
   //Text appears
   const opacity = useTransform(
-    scrollYProgress, [0.2, 0.35, 0.5, 0.65], [ 0, 1, 1, 0]
+    scrollYProgress, [0.1, 0.2, 0.32, 0.38], [ 0, 1, 1, 0]
   );
   
   //Blur only while disappearing
   const blur = useTransform(
-    scrollYProgress, [0.5, 0.65], [0, 10]
+    scrollYProgress, [0.25, 0.32], [0, 10]
   );
 
   const filter = useTransform(
