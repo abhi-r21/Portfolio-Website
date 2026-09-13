@@ -40,10 +40,10 @@ function AboutMe() {
     </div>
 
       <AboutText scrollYProgress={scrollYProgress} />
-      <div className="pt-42">
+      <div className="pt-62">
         <WhatIDo />
       </div>
-      <div className="pt-8">
+      <div className="pt-32">
       <CurrentlyLearning />
       </div>
       <div className="pt-32"><TechStack /></div>
