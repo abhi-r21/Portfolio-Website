@@ -43,10 +43,10 @@ function AboutMe() {
       <div className="pt-62">
         <WhatIDo />
       </div>
-      <div className="pt-32">
+      <div className="pt-22">
       <CurrentlyLearning />
       </div>
-      <div className="pt-32"><TechStack /></div>
+      <div className="pt-22"><TechStack /></div>
     </section>
   );
 }
